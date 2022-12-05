@@ -4,7 +4,7 @@
         {{ if .Page.IsHome }}
         <h1 class="title">{{.Site.Title}}</h1>
         {{ else }}
-        <a href="/" class="title">{{.Site.Title}}</a>
+        <a href="{{.Site.BaseURL}}" class="title">{{.Site.Title}}</a>
         {{end}}
     </div>
     <div class="buttons">
