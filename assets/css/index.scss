@@ -49,8 +49,12 @@
         flex-direction: column;
         gap: 2rem;
 
-        .quillpad a {
-            width: auto;
+        .quillpad {
+            text-align: center;
+
+            a {
+                width: auto;
+            }
         }
     }
 
