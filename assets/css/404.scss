@@ -15,4 +15,15 @@
     img {
         width: 37.5%;
     }
+
+    @media (max-width: 769px) {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    @media (max-width: 426px) {
+        img {
+            width: 75%;
+        }
+    }
 }
