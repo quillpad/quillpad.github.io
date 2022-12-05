@@ -1,4 +1,4 @@
-# Quillpad
+# [Quillpad](https://github.com/quillpad/quillpad) website
 
 ## Building from source
 1.  ```sh
@@ -24,4 +24,4 @@ The [Inter](https://rsms.me/inter) font is licensed under the [OFL-1.1 license](
 
 The icons come from [Octicons](https://primer.style/octicons) and are licensed under the [MIT license](https://github.com/primer/octicons/blob/main/LICENSE).
 
-The Avataaars come from the [Hugo ReFresh theme](https://github.com/PippoRJ/hugo-refresh) and are licensed under the [MIT license](https://github.com/PippoRJ/hugo-refresh/blob/master/LICENSE).
+The Avataaars come from the [Hugo ReFresh theme](https://github.com/PippoRJ/hugo-refresh) and are licensed under the [MIT license](https://github.com/PippoRJ/hugo-refresh/blob/master/LICENSE). The design of the website was also inspired by the ReFresh design.
