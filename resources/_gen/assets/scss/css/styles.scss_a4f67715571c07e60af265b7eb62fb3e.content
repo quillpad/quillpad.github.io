@@ -1,0 +1,1 @@
+@use "header";:root{box-sizing:border-box;font-family:inter,sans-serif}@supports(font-variation-settings:normal){:root{font-family:inter var,sans-serif}}

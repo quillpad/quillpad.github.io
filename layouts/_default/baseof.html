@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ $.Site.Params.description }}">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" href="{{ (resources.Get $.Site.Params.favicon).Permalink }}" type="image/x-icon">
+
+    {{ $global := resources.Get "css/global.scss" | resources.ExecuteAsTemplate "global.scss" . }}
+    {{ $colors := resources.Get "css/colors.scss" | resources.ExecuteAsTemplate "colors.scss" . }}
+    {{ $header := resources.Get "css/header.scss" | resources.ExecuteAsTemplate "header.scss" . }}
+    {{ $footer := resources.Get "css/footer.scss" | resources.ExecuteAsTemplate "footer.scss" . }}
+    {{ $style := slice $global $header $footer $colors | resources.Concat "style.css" | resources.ToCSS | minify |
+    fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ block "styles" . }}
+    {{ end }}
+</head>
+
+<body>
+    {{ partial "header" . }}
+    <main>
+        {{ block "main" . }}
+        {{ end }}
+    </main>
+    {{ partial "footer" . }}
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<footer>
+    <table>
+        <thead>
+            <th><h3>Contact</h3></th>
+            <th><h3>Copyright</h3></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="{{$.Site.Params.repo}}" target="_blank" rel="noopener">GitHub</a></td>
+                <td><p>{{.Site.Copyright}}</p></td>
+            </tr>
+            {{if $.Site.Params.email}}
+            <tr>
+                <td><a href="mailto:{{$.Site.Params.email}}">Email</a></td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+</footer>

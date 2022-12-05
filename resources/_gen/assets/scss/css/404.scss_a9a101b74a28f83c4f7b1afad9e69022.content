@@ -1,0 +1,1 @@
+.error404landing{display:flex;justify-content:space-evenly;align-items:center}.error404landing div{text-align:left;font-size:1.25rem}.error404landing div p{padding-bottom:1rem}.error404landing img{width:37.5%}

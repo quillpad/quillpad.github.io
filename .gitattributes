@@ -1,0 +1,11 @@
+* text=auto
+
+.git* text
+*.lock text
+*.txt text
+
+*.md text linguist-detectable
+*.scss text linguist-detectable
+*.html text linguist-detectable
+
+*.png binary

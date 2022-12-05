@@ -1,0 +1,18 @@
+.error404landing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+        text-align: left;
+        font-size: 1.25rem;
+
+        p {
+            padding-bottom: 1rem;
+        }
+    }
+
+    img {
+        width: 37.5%;
+    }
+}

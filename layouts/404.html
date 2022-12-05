@@ -1,0 +1,20 @@
+{{ define "styles" }}
+{{ $404 := resources.Get "css/404.scss" | resources.ExecuteAsTemplate "404.scss" . | resources.ToCSS | minify |
+fingerprint }}
+<link rel="stylesheet" href="{{$404.Permalink}}" integrity="{{$404.Data.Fingerprint}}">
+{{ end }}
+
+{{ define "title" }}
+404 - {{ .Site.Title }}
+{{end}}
+
+{{ define "main" }}
+<div class="error404landing">
+    <div>
+        <h1>404 Page not found</h1>
+        <p>This is not the page you were looking for...</p>
+    </div>
+    <img src='{{ (resources.Get "images/avataaars_404.png").RelPermalink }}'
+        alt="Avataaar from https://github.com/PippoRJ/hugo-refresh">
+</div>
+{{ end }}

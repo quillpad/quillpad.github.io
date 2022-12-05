@@ -1,0 +1,35 @@
+// Fonts
+:root {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+    @supports (font-variation-settings: normal) {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+// Colors
+$primary: {{.Param "primaryColor"}}
+$secondary: {{}}
+
+// Header
+header {
+    padding: 1rem;
+
+    .brand {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+
+        img {
+            height: 2rem;
+            border-radius: 1rem;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+    }
+}

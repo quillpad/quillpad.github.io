@@ -1,0 +1,91 @@
+.landing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+
+    .quillpad {
+        text-align: left;
+        font-size: 1.25rem;
+
+        p {
+            padding-bottom: 1rem;
+        }
+
+        a {
+            background-color: var(--primary);
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: var(--button);
+            transition: all 0.25s;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @supports (width: fit-content) {
+                width: fit-content;
+            }
+
+            svg {
+                height: 1rem;
+                vertical-align: -2.5%;
+                fill: var(--button);
+                margin-right: 0.25rem;
+            }
+
+            &:hover {
+                filter: brightness(125%);
+            }
+        }
+    }
+
+    img {
+        width: 37.5%;
+    }
+
+    @media (max-width: 769px) {
+        flex-direction: column;
+        gap: 2rem;
+
+        .quillpad a {
+            width: auto;
+        }
+    }
+
+    @media (max-width: 426px) {
+        img {
+            width: 75%;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: var(--primary);
+    }
+
+    .downloads {
+        svg {
+            fill: var(--primary);
+            height: 1rem;
+            margin-right: 0.5rem;
+            vertical-align: -7.5%;
+        }
+    }
+
+    .about {
+        ul {
+            padding-left: 0.5rem;
+
+            li {
+                padding: 0.25rem 0;
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}

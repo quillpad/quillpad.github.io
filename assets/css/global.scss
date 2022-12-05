@@ -1,0 +1,73 @@
+// Fonts
+:root {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+    @supports (font-variation-settings: normal) {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+@supports (scroll-behavior: smooth) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+// Global styles
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    max-width: 80vw;
+    width: 64rem;
+    margin: auto;
+    text-align: justify;
+}
+
+header a,
+footer a,
+.info a {
+    text-decoration: none;
+    transition: all 0.25s;
+    // Credits to https://www.dannyguo.com/blog/animated-multiline-link-underlines-with-css/ for animated underline
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+    &:hover,
+    &:focus {
+        background-size: 100% 2px;
+    }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 1.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 0.5rem;
+    border: solid 0.375rem var(--bg);
+}
+
+// Selection
+::selection {
+    background-color: var(--primary);
+    color: var(--button);
+}
+
+::-moz-selection {
+    background-color: var(--primary);
+    color: var(--button);
+}

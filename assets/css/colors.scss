@@ -1,0 +1,29 @@
+body {
+    --primary: {{$.Site.Params.lightColor}};
+    --bg: #fff;
+    --text: #111;
+    --button: #fff;
+
+    .moon {
+        display: inline-block;
+    }
+
+    .sun {
+        display: none;
+    }
+}
+
+.dark {
+    --primary: {{$.Site.Params.darkColor}};
+    --bg: #111;
+    --text: #fff;
+    --button: #111;
+
+    .sun {
+        display: inline-block;
+    }
+
+    .moon {
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+# Edit these
+title: Quillpad
+baseURL: https://noClaps.github.io/quillpad-website
+copyright: © noClaps - 2022
+
+params:
+  favicon: favicon/favicon.png
+  
+  # These are the accent colors for the light and dark themes, respectively. You can change these to match the theme of your app.
+  lightColor: '#06f'
+  darkColor: '#aaf'
+
+  # A short description for your app, to put into meta tags
+  description: An open source notes app
+  
+  # Uncomment and add in your email address if you want people to contact you that way. 
+  # email: fname.lname@email.tld
+
+  # A catchy tagline for your app
+  tagline: Take notes with Quillpad
+
+  # Your repository where you're hosting code
+  repo: https://github.com/quillpad
+
+  # Download links for your app.
+  # At the moment, only GitHub Releases, Play Store and F-Droid links are supported, but more can be added as needed.
+  # These links show up in the Downloads section of the homepage.
+  downloads:
+    github: https://github.com/quillpad/quillpad/releases/latest
+    fdroid: https://f-droid.org/packages/io.github.quillpad
+    playstore: https://play.google.com/store/apps/details?id=io.github.quillpad
+
+
+# Do not touch unless you know what you're doing!
+disableHugoGeneratorInject: true
+disableKinds: ["section", "taxonomy", "term", "RSS"]
+enableRobotsTXT: true
+languageCode: en-US
+removePathAccents: true
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+minify:
+  minifyOutput: true
