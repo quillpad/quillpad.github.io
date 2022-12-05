@@ -20,7 +20,7 @@ params:
   tagline: Take notes with Quillpad
 
   # Your repository where you're hosting code
-  repo: https://github.com/quillpad
+  repo: https://github.com/noClaps/quillpad-website
 
   # Download links for your app.
   # At the moment, only GitHub Releases, Play Store and F-Droid links are supported, but more can be added as needed.
