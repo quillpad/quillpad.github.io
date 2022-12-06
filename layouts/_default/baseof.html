@@ -8,7 +8,9 @@
     <meta name="description" content="{{ $.Site.Params.description }}">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="icon" href="{{ (resources.Get $.Site.Params.favicon).Permalink }}" type="image/x-icon">
+
+    {{ $favicon := resources.Get $.Site.Params.favicon | fingerprint }}
+    <link rel="icon" href="{{ $favicon.Permalink }}" type="image/x-icon" integrity="{{ $favicon.Data.Integrity }}">
 
     {{ $global := resources.Get "css/global.scss" | resources.ExecuteAsTemplate "global.scss" . }}
     {{ $colors := resources.Get "css/colors.scss" | resources.ExecuteAsTemplate "colors.scss" . }}
