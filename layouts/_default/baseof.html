@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     {{ block "styles" . }}
     {{ end }}
+
+    {{ $script := resources.Get "js/theme.js" | minify | fingerprint }}
+    <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
 </head>
 
 <body>
