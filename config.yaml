@@ -8,7 +8,7 @@ params:
   
   # These are the accent colors for the light and dark themes, respectively. You can change these to match the theme of your app.
   lightColor: '#06f'
-  darkColor: '#aaf'
+  darkColor: '#bcf'
 
   # A short description for your app, to put into meta tags
   description: An open source notes app
