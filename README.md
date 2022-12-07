@@ -2,14 +2,14 @@
 
 ## Building from source
 1.  ```sh
-    git clone https://github.com/noClaps/quillpad-website.git
-    cd quillpad-website
+    git clone https://github.com/quillpad/quillpad.github.io.git
+    cd quillpad.github.io
     ```
 2. Configure the settings in [config.yaml](config.yaml).
 3.  ```sh
     hugo server
     ```
-    Run this in the root directory (`quillpad-website/` if you followed the instructions above), and open `localhost:1313` in your desired browser to see the preview. Make sure to keep Hugo up-to-date as well as this repository, especially if you plan to contribute.
+    Run this in the root directory (`quillpad.github.io if you followed the instructions above), and open localhost:1313` in your desired browser to see the preview. Make sure to keep Hugo up-to-date as well as this repository, especially if you plan to contribute.
 4.  ```sh
     hugo
     ```
@@ -26,4 +26,4 @@ The icons come from [Octicons](https://primer.style/octicons) and are licensed u
 
 The Avataaars come from the [Hugo ReFresh theme](https://github.com/PippoRJ/hugo-refresh) and are licensed under the [MIT license](https://github.com/PippoRJ/hugo-refresh/blob/master/LICENSE). The design of the website was also inspired by the ReFresh design.
 
-All of the remaining content in this repository is licensed under the [BSD Zero-Clause License](LICENSE). 
+All of the remaining content in this repository is licensed under the [GNU GPLv3 License](LICENSE). 
