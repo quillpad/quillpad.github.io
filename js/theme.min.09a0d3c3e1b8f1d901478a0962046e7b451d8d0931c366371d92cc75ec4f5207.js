@@ -1,0 +1,1 @@
+window.matchMedia("(prefers-color-scheme: dark)").matches===!0&&document.body.classList.add("dark");function themeToggle(){document.body.classList.toggle("dark")}
