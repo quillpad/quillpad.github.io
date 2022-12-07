@@ -9,7 +9,7 @@
 3.  ```sh
     hugo server
     ```
-    Run this in the root directory (`quillpad.github.io if you followed the instructions above), and open localhost:1313` in your desired browser to see the preview. Make sure to keep Hugo up-to-date as well as this repository, especially if you plan to contribute.
+    Run this in the root directory (`quillpad.github.io` if you followed the instructions above), and open `localhost:1313` in your desired browser to see the preview. Make sure to keep Hugo up-to-date as well as this repository, especially if you plan to contribute.
 4.  ```sh
     hugo
     ```
