@@ -7,7 +7,7 @@
         <tbody>
             <tr>
                 <td><a href="{{$.Site.Params.repo}}" target="_blank" rel="noopener">GitHub</a></td>
-                <td><p>{{.Site.Copyright}}</p></td>
+                <td><p>&copy; {{ .Site.Title }} - {{ now.Year }}</p></td>
             </tr>
             {{if $.Site.Params.email}}
             <tr>

@@ -1,19 +1,18 @@
 # Edit these
 title: Quillpad
 baseURL: https://quillpad.github.io/
-copyright: © Quillpad - 2022
 
 params:
   favicon: images/Q_centered.png
-  
+
   # These are the accent colors for the light and dark themes, respectively. You can change these to match the theme of your app.
   lightColor: '#96b23a'
   darkColor: '#a4c639'
 
   # A short description for your app, to put into meta tags
   description: An open source notes app
-  
-  # Uncomment and add in your email address if you want people to contact you that way. 
+
+  # Uncomment and add in your email address if you want people to contact you that way.
   # email: fname.lname@email.tld
 
   # A catchy tagline for your app
