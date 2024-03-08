@@ -1,7 +1,7 @@
 # Edit these
 title: Quillpad
 baseURL: https://quillpad.github.io/
-copyright: © Quillpad - 2022
+copyright: © Quillpad - 2024
 
 params:
   favicon: images/Q_centered.png
